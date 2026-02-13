@@ -17,17 +17,10 @@ body {
 
 .centered {
     max-width: 60em;
-    margin-left: 20%;
-    margin-right: 1em;
+    margin: auto;
     padding: 1em;
 }
 
-/* smaller screens */
-@media (max-width: 700px) {
-  .centered {
-     margin-left: 1em;
-  }
-}
 
 .highlighted_top {
     background-color: #1a0e37;
