@@ -16,8 +16,9 @@ body {
 }
 
 .centered {
-    max-width: 50%;
+    max-width: 60em;
     margin-left: 20%;
+    margin-right: 1em;
     padding: 1em;
 }
 
