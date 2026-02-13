@@ -31,3 +31,21 @@ body {
     background-color: #120927;
     border-radius: 0px 0px 10px 10px;
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grow-image {
+  width: 10% ;
+  transition: width 0.3s ease;
+  display: flex;
+  margin: auto;          /* center it */
+  gap: 1em;
+  padding: 1em;
+}
+
+.grow-image:focus {
+  width: 100%;          /* full screen width */
+}
