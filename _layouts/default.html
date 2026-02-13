@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="website">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">  
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" sizes="32x32">
+  <link rel="stylesheet" href="{{ '/assets/normalize.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/look.css' | relative_url }}">
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <nav>
+  {% for page in site.pages %}
+    {% if page.nav_name %}
+      <a href="{{ page.url }}">{{ page.nav_name }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>
+
+<div>
+  {{ content }}
+</div>
+
+</body>
+</html>

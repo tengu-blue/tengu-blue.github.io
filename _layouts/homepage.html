@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="website">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">  
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" sizes="32x32">
+  <link rel="stylesheet" href="{{ '/assets/normalize.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/look.css' | relative_url }}">
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <nav>
+  {% for page in site.pages %}
+    {% if page.nav_name %}
+      <a href="{{ page.url }}">{{ page.nav_name }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>
+
+<div class="centered highlighted_top">
+    <h1> About </h1>
+    <p>
+        This page is dedicated to showcasing my past projects, things I am currently interested in and to provide my commentary on various things.
+    </p>
+    <p>
+        My interests include programming, video games development, computer graphics. You can also find me at: <br>
+    </p>
+    <p style="display: flex; justify-content: center;">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jakub-jankovec-536bba34b" style="padding:5px">
+            <img src="assets/LI-In-Bug.png" style="width:2em">
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/tengu-blue" style="padding:5px">
+            <img src="assets/GitHub_Invertocat_White.png" style="width:1.8em">
+        </a>
+    </p>
+</div>
+
+<div style="column-count: 3;" class="centered">
+  <div>
+    <h2 style="margin-top: 0;"> Past projects </h2>
+    <ul>
+    {% for page in site.pages %}
+      {% if page.type == "past_project" %}
+      <li>  
+        <a href="{{ page.url }}">{{ page.nav_name }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+
+  </div>
+
+  <div>
+    <h2> Current projects </h2>
+    <ul>
+    {% for page in site.pages %}
+      {% if page.type == "current_project" %}
+      <li>  
+        <a href="{{ page.url }}">{{ page.nav_name }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    
+  </div>
+    
+  <div>
+    <h2> Other interests </h2>
+    <ul>
+    {% for page in site.pages %}
+      {% if page.type == "other" %}
+      <li>  
+        <a href="{{ page.url }}">{{ page.nav_name }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    
+  </div>
+</div>
+
+</body>
+</html>

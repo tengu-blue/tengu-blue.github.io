@@ -1,0 +1,13 @@
+title: Jakub Jankovec - 
+email: jankovec.jakub@gmail.com
+description: >- 
+  A webpage to showcase projects, collect thoughts
+  and to share interests. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://tengu-blue.github.io/"
+github_username:  tengu-blue
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-sitemap

@@ -1,0 +1,32 @@
+
+body {
+    background-image: url('back.png');
+    background-size: cover;
+    color: white;
+
+    font-family: Roboto;
+}
+
+.larger_text {
+    font-size: 18px;
+}
+
+.higher_text {
+    line-height: 1.7;
+}
+
+.centered {
+    max-width: 50%;
+    margin-left: 20%;
+    padding: 1em;
+}
+
+.highlighted_top {
+    background-color: #1a0e37;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.highlighted_bot {
+    background-color: #120927;
+    border-radius: 0px 0px 10px 10px;
+}
