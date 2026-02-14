@@ -46,6 +46,10 @@ body {
   padding: 1em;
 }
 
+.grow-image:hover {
+  cursor: pointer;
+}
+
 .grow-image:focus {
   width: 100%;          /* full screen width */
 }
