@@ -1,0 +1,22 @@
+---
+layout: current_project
+---
+
+
+<div class="centered higher_text">
+  {{content | markdownify}}
+  
+  {% for jam in site.gamejams reversed %}
+    
+  <h2 style="margin-bottom: 0px;">{{ jam.title }}</h2>
+  
+  <b>{{ jam.jam_theme }}</b> </br>
+
+  <div style="margin-top: 1em;">
+  {{ jam.content | markdownify }}
+  </div>
+  
+  {% endfor %}
+  
+
+</div>

@@ -7,6 +7,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tengu-blue.github.io/"
 github_username:  tengu-blue
 
+collections:
+  gamejams:
+    output: false
+
 # Build settings
 theme: minima
 plugins:
