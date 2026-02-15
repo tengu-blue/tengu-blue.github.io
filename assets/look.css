@@ -37,6 +37,11 @@ body {
     flex-wrap: wrap;
 }
 
+.gallery img {
+    width:45%;
+    margin:auto;
+}
+
 .grow-image {
   width: 10% ;
   transition: width 0.3s ease;

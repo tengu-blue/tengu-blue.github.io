@@ -29,7 +29,7 @@
 {% endif %}
 
 <div class="centered higher_text">
-  {{ content }}
+  {{ content | markdownify }}
 </div>
 
 {% if page.project_postmortem %}
